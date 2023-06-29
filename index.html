@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=EB+Garamond:wght@700&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -27,7 +30,6 @@
                           fill="white"/>
                 </svg>
             </a>
-
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
@@ -39,7 +41,7 @@
                     <li class="menu__list-item">
                         <a href="#" class="menu__list-link">Cosmetics</a>
                     </li>
-                    <li class="menu__list-item.logo">
+                    <li class="menu__list-item logo">
                         <a href="#" class="menu__list-link">
                             <svg width="40" height="40" viewBox="0 0 60 60" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +70,7 @@
 
                 </ul>
             </nav>
-
-            <button onclick="toggleMenu()" class="header__menu-btn">
+            <button  class="header__menu-btn" id="menuBtn">
                 <svg width="50" height="21" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="10" y1="0.5" x2="50" y2="0.5" stroke="white"/>
                     <line x1="10" y1="20.5" x2="50" y2="20.5" stroke="white"/>
@@ -77,54 +78,61 @@
                 </svg>
             </button>
         </div>
-        <svg width="1200" height="1" viewBox="0 0 1296 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line opacity="0.5" y1="0.5" x2="1296" y2="0.5" stroke="white"/>
-        </svg>
-        <h1 class="header__title">Beauty salon <br> "Delote-beauty" <br> on Krestovsky</h1>
-        <div class="header__slide">
-            <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.5" width="19" height="29" rx="7.5" stroke="white"/>
-                <circle cx="10" cy="9" r="2" fill="white"/>
-            </svg>
-            <span> Scroll down</span>
-
-        </div>
-
     </div>
-
 </header>
+<main>
+    <article>
+        <section class="hero">
+            <div class="container">
+<!--                <svg width="1200" height="1" viewBox="0 0 1296 1" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <line opacity="0.5" y1="0.5" x2="1296" y2="0.5" stroke="white"/>-->
+<!--                </svg>-->
+                <h1 class="header__title">Beauty salon "Delote-beauty" on Krestovsky</h1>
+                <div class="header__slide">
+                    <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="19" height="29" rx="7.5" stroke="white"/>
+                        <circle cx="10" cy="9" r="2" fill="white"/>
+                    </svg>
+                    <span class="scroll-down"> Scroll down</span>
+                </div>
+                <div id="js-menu-container" class="dropdown-content">
+                    <button  class="close-button" id="btnCloseMenu">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 30L2 2M2 30L30 2L2 30Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="header__dropdown-menu">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas
+                            sem dui,
+                            arcu
+                            faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis.
+                            Tortor
+                            donec
+                            pellentesque leo ac placerat. Morbi.
+                        </p>
+                        <h2 class="contacts">Contacts</h2>
+                        <ul class="contacts__list">
+                            <li><a href="tel:+7812123-45-67">+7 (812) 123-45-67</a></li>
+                            <li><a href="tel:+7911123-45-67">+7 (911) 123-45-67</a></li>
+                            <li>Новоостровский проспект, дом 36 лит. С</li>
+                        </ul>
+                        <h2 class="working-mode">Режим работы</h2>
+                        <ul class="contacts__list">
+                            <li>C 10:00 до 21:00 (Пн-Пт)>+7 (812) 123-45-67</li>
+                            <li>С 11:00 до 20:00 (Сб-Вс)>+7 (911) 123-45-67</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
 
 
-<div id="dropdownMenu" class="dropdown-content">
-    <button onclick="toggleMenu()" class="close-button">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30 30L2 2M2 30L30 2L2 30Z" stroke="white" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-        </svg>
-    </button>
-    <div class="header__dropdown-menu">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu
-            faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec
-            pellentesque leo ac placerat. Morbi.
-        </p>
-        <span class="contacts">Contacts</span>
-        <ul class="contacts__list">
-            <li><a href="tel:+7812123-45-67">+7 (812) 123-45-67</a></li>
-            <li><a href="tel:+7911123-45-67">+7 (911) 123-45-67</a></li>
-            <li>Новоостровский проспект, дом 36 лит. С</li>
-        </ul>
-        <span class="working-mode">Режим работы</span>
-        <ul class="contacts__list">
-            <li>C 10:00 до 21:00 (Пн-Пт)>+7 (812) 123-45-67</li>
-            <li>С 11:00 до 20:00 (Сб-Вс)>+7 (911) 123-45-67</li>
-
-        </ul>
-    </div>
-</div>
-
-
-<script src="assets/js/menu.js">
+<script src="assets/js/menu.js" type="module">
 </script>
 </body>
 </html>
