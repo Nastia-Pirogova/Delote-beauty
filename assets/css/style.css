@@ -8,6 +8,12 @@
 
 body{
     font-family: 'EB Garamond', serif;
+    color: #FFFFFF;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
 }
 
 a{
@@ -15,15 +21,15 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
+nav{
+    margin: 0;
 }
 
+
 .container{
-    max-width: 1326px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
-
 }
 
 .header{
@@ -32,29 +38,89 @@ ul{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
+    position: relative;
 }
 
+.instagram-link{
 
+}
 
 .header__top{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
+}
+
+.menu{
+    margin: 0
 }
 
 .menu__list{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
 }
 
 .menu__list-item{
-    justify-content: space-between;
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: 600;
+    line-height: 130%;
 
 }
 
-.menu__list-link{
-     color: #FFFFFF;
-     /* p/14sb */
-     font-size: 18px;
-     font-family: "Cormorant Garamond", sans-serif;
-     font-weight: 600;
-     line-height: 130%;
- }
+.menu__list-item + .menu__list-item{
+    margin-left: 80px;
+
+}
+
+.menu__list-item\.logo{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.menu__list-item:hover{
+    color: #CDAA7D;
+    text-decoration: underline;
+}
+
+.header__menu-btn{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+.header__title{
+    margin-top: 160px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 72px;
+    font-family: "EB Garamond", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.header__slide{
+    margin-top: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+    position: absolute;
+
+}
+

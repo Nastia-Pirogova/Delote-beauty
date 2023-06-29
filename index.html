@@ -2,72 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete-beauty</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=EB+Garamond:wght@700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__top">
-                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.5341 1H7.46592C3.89455 1 1 3.89507 1 7.46592V18.5341C1 22.1054 3.89507 25 7.46643 25H18.5336C22.1049 25 25 22.1049 25 18.5336V7.46592C25 3.89455 22.1049 1 18.5336 1H18.5341Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M13.0002 18.7932C16.1997 18.7932 18.7934 16.1995 18.7934 13C18.7934 9.8005 16.1997 7.20679 13.0002 7.20679C9.80073 7.20679 7.20703 9.8005 7.20703 13C7.20703 16.1995 9.80073 18.7932 13.0002 18.7932Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-                        <path d="M20.0342 7.20688C20.7198 7.20688 21.2755 6.65115 21.2755 5.96562C21.2755 5.2801 20.7198 4.72437 20.0342 4.72437C19.3487 4.72437 18.793 5.2801 18.793 5.96562C18.793 6.65115 19.3487 7.20688 20.0342 7.20688Z" fill="white"/>
-                    </svg>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Home</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Masters</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Cosmetics</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_1_95)">
-                                        <path d="M58.7857 51.8969H52.4329C56.6497 46.3031 58.9721 39.3085 58.9721 32.2017C58.9721 14.9928 45.9751 0.992188 29.9982 0.992188C14.0219 0.992188 1.02429 14.9934 1.02429 32.2017C1.02429 39.3097 3.34548 46.3043 7.56163 51.8969H1.21433C0.544019 51.8969 0 52.4409 0 53.1112V57.7949C0 58.4652 0.544019 59.0092 1.21433 59.0092H18.5495C19.2198 59.0092 19.7638 58.4652 19.7638 57.7949V52.5775C19.7638 52.2885 19.6612 52.0098 19.4742 51.7906L19.4068 51.7111C19.3388 51.6303 19.2599 51.5593 19.173 51.4998C13.207 47.365 9.5003 39.9709 9.5003 32.201C9.5003 19.6655 18.6958 9.4676 29.9982 9.4676C41.2999 9.4676 50.4954 19.6661 50.4954 32.201C50.4954 40.0037 46.7656 47.4136 40.7632 51.5398C40.4335 51.7663 40.2368 52.1403 40.2368 52.5398V57.7936C40.2368 58.4639 40.7808 59.008 41.4511 59.008H58.7857C59.456 59.008 60 58.4639 60 57.7936V53.11C60 52.4403 59.4572 51.8969 58.7857 51.8969Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_1_95">
-                                            <rect width="60" height="60" fill="white"/>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Stock</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Reviews</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link">Contacts</a>
-                            </li>
+<header class="header">
+    <div class="container">
+        <div class="header__top">
+            <a href="#" class="instagram-link">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.5341 1H7.46592C3.89455 1 1 3.89507 1 7.46592V18.5341C1 22.1054 3.89507 25 7.46643 25H18.5336C22.1049 25 25 22.1049 25 18.5336V7.46592C25 3.89455 22.1049 1 18.5336 1H18.5341Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M13.0002 18.7932C16.1997 18.7932 18.7934 16.1995 18.7934 13C18.7934 9.8005 16.1997 7.20679 13.0002 7.20679C9.80073 7.20679 7.20703 9.8005 7.20703 13C7.20703 16.1995 9.80073 18.7932 13.0002 18.7932Z"
+                          stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M20.0342 7.20688C20.7198 7.20688 21.2755 6.65115 21.2755 5.96562C21.2755 5.2801 20.7198 4.72437 20.0342 4.72437C19.3487 4.72437 18.793 5.2801 18.793 5.96562C18.793 6.65115 19.3487 7.20688 20.0342 7.20688Z"
+                          fill="white"/>
+                </svg>
+            </a>
 
-                        </ul>
-                    </nav>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Masters</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Cosmetics</a>
+                    </li>
+                    <li class="menu__list-item.logo">
+                        <a href="#" class="menu__list-link">
+                            <svg width="40" height="40" viewBox="0 0 60 60" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_95)">
+                                    <path d="M58.7857 51.8969H52.4329C56.6497 46.3031 58.9721 39.3085 58.9721 32.2017C58.9721 14.9928 45.9751 0.992188 29.9982 0.992188C14.0219 0.992188 1.02429 14.9934 1.02429 32.2017C1.02429 39.3097 3.34548 46.3043 7.56163 51.8969H1.21433C0.544019 51.8969 0 52.4409 0 53.1112V57.7949C0 58.4652 0.544019 59.0092 1.21433 59.0092H18.5495C19.2198 59.0092 19.7638 58.4652 19.7638 57.7949V52.5775C19.7638 52.2885 19.6612 52.0098 19.4742 51.7906L19.4068 51.7111C19.3388 51.6303 19.2599 51.5593 19.173 51.4998C13.207 47.365 9.5003 39.9709 9.5003 32.201C9.5003 19.6655 18.6958 9.4676 29.9982 9.4676C41.2999 9.4676 50.4954 19.6661 50.4954 32.201C50.4954 40.0037 46.7656 47.4136 40.7632 51.5398C40.4335 51.7663 40.2368 52.1403 40.2368 52.5398V57.7936C40.2368 58.4639 40.7808 59.008 41.4511 59.008H58.7857C59.456 59.008 60 58.4639 60 57.7936V53.11C60 52.4403 59.4572 51.8969 58.7857 51.8969Z"
+                                          fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_95">
+                                        <rect width="60" height="60" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
 
-                    <button class="header__menu-btn">
-                        <svg width="50" height="21" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="10" y1="0.5" x2="50" y2="0.5" stroke="white"/>
-                            <line x1="10" y1="20.5" x2="50" y2="20.5" stroke="white"/>
-                            <line y1="10.5" x2="40" y2="10.5" stroke="white"/>
-                        </svg>
-                    </button>
-                </div>
-                <h1 class="header__title">Салон красоты «Delote-Beauty» на Крестовском</h1>
-            </div>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Stock</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Reviews</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a href="#" class="menu__list-link">Contacts</a>
+                    </li>
 
-        </header>
+                </ul>
+            </nav>
+
+            <button class="header__menu-btn">
+                <svg width="50" height="21" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="0.5" x2="50" y2="0.5" stroke="white"/>
+                    <line x1="10" y1="20.5" x2="50" y2="20.5" stroke="white"/>
+                    <line y1="10.5" x2="40" y2="10.5" stroke="white"/>
+                </svg>
+            </button>
+        </div>
+        <svg width="1200" height="1" viewBox="0 0 1296 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line opacity="0.5" y1="0.5" x2="1296" y2="0.5" stroke="white"/>
+        </svg>
+        <h1 class="header__title">Beauty salon <br> "Delote-beauty" <br> on Krestovsky</h1>
+        <div class="header__slide">
+            <svg width="20" height="30" viewBox="0 0 20 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="19" height="29" rx="7.5" stroke="white"/>
+                <circle cx="10" cy="9" r="2" fill="white"/>
+            </svg>
+            <span> Scroll down</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<script src="assets/js/menu.js">
+</script>
 </body>
 </html>
