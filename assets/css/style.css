@@ -111,8 +111,7 @@ nav{
     line-height: 120%;
 }
 
-.header__slide{
-    margin-top: 293px;
+.header__slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +119,110 @@ nav{
     font-family: "Cormorant Garamond", sans-serif;
     font-weight: 700;
     line-height: 140%;
+    /* position: absolute; */
+    margin: 250px auto;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #111111;
+    padding: 50px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.close-button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
     position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.header__dropdown-menu{
+    display: flex;
+    flex-direction: column;
 
 }
+
+.header__dropdown-menu p{
+    color: #FFF;
+    /* p / 18r */
+    font-size: 18px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+.header__dropdown-menu ul{
+    padding-left: 0;
+
+
+}
+
+.header__dropdown-menu a{
+    padding: 0;
+    color: #ffffff;
+
+}
+
+.contacts{
+    margin-top: 80px;
+    font-size: 24px;
+    font-family: "EB Garamond", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.contacts{
+    margin: 80px 0 25px 0;
+    font-size: 24px;
+    font-family: "EB Garamond", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.working-mode{
+    margin: 60px 0 25px 0;
+    font-size: 24px;
+    font-family: "EB Garamond", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.contacts__list{
+    font-size: 18px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+
+
 

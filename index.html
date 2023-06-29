@@ -69,7 +69,7 @@
                 </ul>
             </nav>
 
-            <button class="header__menu-btn">
+            <button onclick="toggleMenu()" class="header__menu-btn">
                 <svg width="50" height="21" viewBox="0 0 50 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="10" y1="0.5" x2="50" y2="0.5" stroke="white"/>
                     <line x1="10" y1="20.5" x2="50" y2="20.5" stroke="white"/>
@@ -95,6 +95,33 @@
 </header>
 
 
+<div id="dropdownMenu" class="dropdown-content">
+    <button onclick="toggleMenu()" class="close-button">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 30L2 2M2 30L30 2L2 30Z" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <div class="header__dropdown-menu">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu
+            faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec
+            pellentesque leo ac placerat. Morbi.
+        </p>
+        <span class="contacts">Contacts</span>
+        <ul class="contacts__list">
+            <li><a href="tel:+7812123-45-67">+7 (812) 123-45-67</a></li>
+            <li><a href="tel:+7911123-45-67">+7 (911) 123-45-67</a></li>
+            <li>Новоостровский проспект, дом 36 лит. С</li>
+        </ul>
+        <span class="working-mode">Режим работы</span>
+        <ul class="contacts__list">
+            <li>C 10:00 до 21:00 (Пн-Пт)>+7 (812) 123-45-67</li>
+            <li>С 11:00 до 20:00 (Сб-Вс)>+7 (911) 123-45-67</li>
+
+        </ul>
+    </div>
+</div>
 
 
 <script src="assets/js/menu.js">
